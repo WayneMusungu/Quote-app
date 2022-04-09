@@ -30,9 +30,13 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
+  displayInfo(index: any) {
+    this.quotes[index].showInformation = !this.quotes[index].showInformation;
+  }
 
   
   constructor() { }
+
 
   ngOnInit(): void {
   }
