@@ -10,7 +10,7 @@ import { Quotes } from '../quotes';
 export class QuoteComponent implements OnInit {
   quotes: Quotes[] = [
     new Quotes(1, 'Otima', 'Skills', 'Learn a skill, master and monetize it. Work anywhere you want, how you want and with anyone you want. Small incremental steps.', 'Milton Berle', new Date(2022, 2, 2), 0, 0),
-    new Quotes(2, 'Otima', 'Skills', 'Learn a skill, master and monetize it. Work anywhere you want, how you want and with anyone you want. Small incremental steps.', 'Milton Berle', new Date(2022, 2, 2), 0, 0),
+    new Quotes(2, 'Wallace', 'Inner-change', 'Everyone thinks of changing the world, but no one thinks of changing himself.',  'Nelson Mandela', new Date (2020, 9, 28), 0,0),
     new Quotes(3, 'Otima', 'Skills', 'Learn a skill, master and monetize it. Work anywhere you want, how you want and with anyone you want. Small incremental steps.', 'Milton Berle', new Date(2022, 2, 2), 0, 0),
 
   ];
