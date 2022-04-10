@@ -1,0 +1,22 @@
+#buttons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+#bad{
+    background-color: yellow;
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+#rmv{
+    float: right;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#lk{
+    float: left;
+    border-radius: 20px;
+
+}

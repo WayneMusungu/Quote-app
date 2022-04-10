@@ -11,6 +11,8 @@ h1{
 }
 .txt{
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .whole{
     background-color: aquamarine;
@@ -29,6 +31,7 @@ h1{
 }
 #toggle-button{
     float: right;
+    border-radius: 20px;
 }
 #date{
     float:right;
