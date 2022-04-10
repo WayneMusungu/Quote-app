@@ -9,7 +9,7 @@ import { Quotes } from '../quotes';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quotes[] = [
-    new Quotes(1, 'Otima', 'Skills', 'Learn a skill, master and monetize it. Work anywhere you want, how you want and with anyone you want. Small incremental steps.', 'Milton Berle', new Date(2021, 2, 2), 0, 0),
+    new Quotes(1, 'Otima', 'Skills', 'Learn a skill, master and monetize it. Work anywhere you want, how you want and with anyone you want. Small incremental steps.', 'Wayne Musungu', new Date(2021, 2, 2), 0, 0),
     new Quotes(2, 'Phoebe', 'Happiness', 'Happiness is a direction not a place.',  'Sydney J. Harris', new Date (2021, 9, 28), 0,0),
     new Quotes(3, 'Chelsea', 'Love', "Since I can't be with you right now I will have to be content just dreaming about when we will be together again", 'Susan Polis Schutz', new Date(2022, 1, 31), 0, 0),
 
