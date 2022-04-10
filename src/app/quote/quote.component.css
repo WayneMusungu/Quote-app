@@ -11,9 +11,25 @@ h1{
 }
 .txt{
     text-align: center;
-    color: yellowgreen;
 }
 .whole{
     background-color: aquamarine;
     min-height: 100vh;
+}
+.card{
+    width:30rem;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    
+}
+.all-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#toggle-button{
+    float: right;
+}
+#date{
+    float:right;
 }

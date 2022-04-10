@@ -8,19 +8,19 @@
     <div class="row">
       <div class="col-md-8">
         <div class="all-cards">
-          <div *ngFor="let quote of quotes; let i= index" class="card" style="">
+          <div *ngFor="let quote of quotes; let i= index" class="card">
             <div class="card-body">
               <h4 class="card-title" quoteTitle>{{quote.title}}<button
-                (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button">Toggle Info</button></h4>
+                (click)='displayInfo(i)' class="btn btn-info btn-sm" id="toggle-button">Toggle Info</button></h4>
               <p class="card-text" id="param">{{quote.quote}}</p>
               <app-quote-detail *ngIf="quote.showInformation" bind-quote="quote" (isComplete)="deleteQuote($event,i)"><button
                 (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button"></button>
               </app-quote-detail>
 
-              <h6 class="txt"> * {{quote.author}} <span id="when">Posted: {{quote.datePosted|dateCount}} *
-                days ago.</span> </h6>
+              <em><h6 class="txt"> * {{quote.author}} <span id="when">Posted: {{quote.datePosted|dateCount}} 
+                days ago.*</span> </h6></em>
              
-              <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date"> on: <span
+              <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date"> Date: <span
                     id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
             </div>
           </div>
