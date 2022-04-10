@@ -9,7 +9,7 @@
           <div *ngFor="let quote of quotes; let i= index" class="card" style="">
             <div class="card-body">
               <h4 class="card-title" quoteTitle>{{quote.title}}<button
-                (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button">See More</button></h4>
+                (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button">View More</button></h4>
               <p class="card-text" id="param">{{quote.quote}}</p>
               <app-quote-detail *ngIf="quote.showInformation" bind-quote="quote" (isComplete)="deleteQuote($event,i)"><button
                 (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button">See More</button>
