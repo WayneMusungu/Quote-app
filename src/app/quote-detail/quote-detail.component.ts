@@ -14,10 +14,10 @@ export class QuoteDetailComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  upvote() {
+  likes() {
     this.quote.likes += 1;
   }
-  downvote() {
+  dislikes() {
     this.quote.dislikes += 1;
   }
 
