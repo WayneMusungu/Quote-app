@@ -1,0 +1,12 @@
+.container-fluid{
+    padding-top: 30px;
+    background-color:#025955;
+    border-radius: 10px;
+    padding-bottom: 80px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  #submit{
+      margin-top:40px;
+  }
