@@ -3,7 +3,7 @@
 </h1>
 
   <div class="container">
-    <p class="initial">Welcome to Otima Quotes<br>where life is changed, decisions are made and <br> most importantly quotes are displayed for lovely peeople like you!</p>
+    <p class="initial">Welcome to Otima Quotes<br>where life is changed, decisions are made and <br> most importantly quotes are displayed for lovely people like you!</p>
     <div class="row">
       <div class="col-md-8">
         <div class="all-cards">
@@ -14,7 +14,6 @@
               <p class="card-text" id="param">{{quote.quote}}</p>
               <app-quote-detail *ngIf="quote.showInformation" bind-quote="quote" (isComplete)="deleteQuote($event,i)"><button
                 (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button"></button>
-
               </app-quote-detail>
               
               <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date"> on: <span
