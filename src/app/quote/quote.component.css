@@ -9,11 +9,7 @@ h1{
     text-align: center;
     font-size: xx-large;
 }
-.txt{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 .whole{
     background-color: aquamarine;
     min-height: 100vh;
@@ -35,4 +31,9 @@ h1{
 }
 #date{
     float:right;
+}
+
+#toggle-button{
+    background-color: #f10086;
+
 }

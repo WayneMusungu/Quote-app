@@ -1,37 +1,34 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'dateCount',
-  pure: true
+  name: 'dateCount'
 })
 export class DateCountPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-      if (value) {
-          const seconds = Math.floor((+new Date() - +new Date(value)) / 1000);
-          if (seconds < 29) // less than 30 seconds ago will show as 'Just now'
-              return 'Just now';
-          const intervals = {
-              'year': 31536000,
-              'month': 2592000,
-              'week': 604800,
-              'day': 86400,
-              'hour': 3600,
-              'minute': 60,
-              'second': 1
-          };
-          let counter;
-          for (const i in intervals) {
-              counter = Math.floor(seconds / intervals[i]);
-              if (counter > 0)
-                  if (counter === 1) {
-                      return counter + ' ' + i + ' ago'; // singular (1 day ago)
-                  } else {
-                      return counter + ' ' + i + 's ago'; // plural (2 days ago)
-                  }
-          }
-      }
-      return value;
-  }
+  transform(value: any): string {
+    let timeCount: string = "";
+    let today: any = new Date();
+    var difference = Math.abs(value - today) / 1000;
+    var days= Math.floor(difference / 86400);
+    if(days > 0){
+      timeCount+= Math.floor(days) +" days ";
+    }
+    difference-= days * 86400;
+    var hours= Math.floor(difference / 3600) % 24;
+    if(hours > 0){
+      timeCount+= Math.floor(hours)+" hrs ";
+    }
+    difference-= hours * 3600;
 
+    var minutes= Math.floor(difference / 60) % 60;
+    if(minutes > 0){
+      timeCount+= Math.floor(minutes)+" mins ";
+    }
+    difference -= minutes * 60;
+    var seconds = difference % 60;
+    if(seconds > 0){
+      timeCount+= Math.floor(seconds)+" secs ";
+    }
+    return timeCount;
+  }
 }

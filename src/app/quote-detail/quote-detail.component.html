@@ -1,11 +1,17 @@
+<em>
+  <p class="txt">
+    * {{ quote.author }}
+    <span>Posted: {{ quote.datePosted | dateCount }} *</span>
+  <p>
+</em>
 <div class="container-fluid" id="buttons">
   <button class="btn btn-sm btn-danger" id="rmv" (click)="quoteDelete(true)">
     Delete<i class="fa fa-trash" id="delete"></i>
   </button>
   <button class="btn btn-sm btn-success" id="lk" (click)="likes()">
-    {{ quote.likes }} <i id="like"></i>likes
+    {{ quote.likes }} <i id="like"></i>Upvote
   </button>
   <button class="btn btn-sm hate" id="bad" (click)="dislikes()">
-    {{ quote.dislikes }} <i id="dislike"></i>dislikes
+    {{ quote.dislikes }} <i id="dislike"></i>Downvote
   </button>
 </div>

@@ -3,7 +3,7 @@
 #### By **Wayne Musungu**
 
 ## Description
-- An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
+- This an  application that enables users to add quotes, delete quotes, upvote quote and downvote quote. This application contains a form component that has input sections for the quote, the author, and the person who submitted the quote.
 
 ## Behaviour Driven Development(BDD)
 
