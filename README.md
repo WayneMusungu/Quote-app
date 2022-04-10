@@ -5,7 +5,7 @@
 ## Description
 - This an  application that enables users to add quotes, delete quotes, upvote quote and downvote quote. This application contains a form component that has input sections for the quote, the author, and the person who submitted the quote.
 
-![LANDINGPAGE] (localhost_4200_(Nest Hub Max).png)
+![LANDING PAGE](ld.png)
 
 ## Behaviour Driven Development(BDD)
 
