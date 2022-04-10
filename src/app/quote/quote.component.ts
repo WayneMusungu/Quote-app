@@ -33,6 +33,13 @@ export class QuoteComponent implements OnInit {
   displayInfo(index: any) {
     this.quotes[index].showInformation = !this.quotes[index].showInformation;
   }
+  addNewQuote (quote){
+    let arraysize = this.Quotes.length;
+    quote.id = arraysize + 1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+
 
   
   constructor() { }
