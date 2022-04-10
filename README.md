@@ -1,27 +1,52 @@
 # Quotes
+#### Quotes, April 10th 2021
+#### By **Wayne Musungu**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+## Description
+- An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
 
-## Development server
+## Behaviour Driven Development(BDD)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+| Input                        | Ouput                                                                                            |
+|--------------------------    |----------------------------------------------------------------------------------------------    |
+| User clicks Post  Quote     | Quote form displays with input fields for Author, Publisher                  |
+| User Clicks Delete           | The quote is purged from view             |
+| User clicks Upvote        |   upvote is incremented value by  1 on each click      |
+| User clicks Downvote     | downvote is decremented value by 1 on each click     |
 
-## Code scaffolding
+## Setup/Installation requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Clone  or download and unzip the repository from github, [https://github.com/WayneMusungu/Quote-app.git].
+- If you have git Use this command `git clone *` to clone the project.
+- Run ng serve from your terminal
 
-## Build
+## Live Demo
+To view the page click on the link below
+* [](*)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
+- Angular CLI
 
-## Running unit tests
+## Known Bugs
+- There are no known bugs currently. The page works as expected.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Support and Contact Details
+- For any comments,suggestions, feedback or inquiries, contact me via email: `waynemuyera17@gmail.com`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Make contributions to the code.
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*MIT*
+Copyright (c) 2022 **Wayne Musungu**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+=======
+# Quote-app
+
