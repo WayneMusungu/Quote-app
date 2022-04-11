@@ -24,7 +24,7 @@
 
 ## Live Demo
 To view the page click on the link below
-* [https://waynemusungu.github.io/Quote-app/](*)
+* [waynemusungu.github.io/quote-app/](*)
 
 ## Technologies Used
 - Angular CLI
